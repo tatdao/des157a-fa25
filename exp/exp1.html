@@ -10,7 +10,22 @@
     <h2>Please open the console to see the functionality of the code!</h2>
 
     <script>
-        
+        // Write a program that takes a lowercase string and capitalizes the first letter of each word in the string.
+        var text = "hello, welcome to davis!";
+        var result = "";
+
+        // sequence starts here
+        // using for loop
+        for(var i=0; i<text.length; i++) {
+            console.log(text);
+            // selection
+            if(i == 0 || text[i-1] === " "){
+                result += text[i].toUpperCase();
+            } else {
+                result += text[i];
+            }
+        }
+        console.log(result);
     </script>
 </body>
 </html>
