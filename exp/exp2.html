@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <h2>Your favorite color is:</h2>
+    <div id="display">
+        <p>User's favorite color</p>
+    </div>
+    
+    <p>*Open the console to check out our guess for your favorite color!</p>
+    
+    <script>
+        // using prompt method to get the user's fav color
+        var userColor = prompt("What's your favorite color? (type it in lowercase)", "");
+        var colorsArray = ["orange", "yellow", "red", "green", "purple", "blue"];
+        var screenDisplay = document.querySelector('#display');
+
+        // writing code for showing the user's input on the web page
+        for(var i=0; i<colorsArray.length; i++){
+            if(colorsArray.includes(userColor)){
+                screenDisplay.innerHTML = `<p>${userColor}</p>`;
+                screenDisplay.style.color = userColor;
+                screenDisplay.style.fontSize = "2em";
+            } else {
+                screenDisplay.innerHTML = 'You did not enter a color!';
+                screenDisplay.style.color = "red";
+            }
+        }
+        
+        var guessedColor = colorsArray[randomInt(0,5)];
+        
+        // the computer will guess the user's fav color by randomly picking a color from the colorsArray
+        function randomInt(min, max) {
+            var numOfValues = max - min + 1;
+            var randomNum = Math.random();
+            var randomVal = randomNum * numOfValues;
+            var roundedRandomVal = Math.floor(randomVal);
+            var finalNum = min + roundedRandomVal;
+
+            return finalNum;
+        }
+
+        // the guessedColor will display in console
+        console.log(guessedColor);
+
+        // the console will return a response from the computer after
+        if (guessedColor === userColor){
+            console.log('Yay! I got your favorite color right!');
+        } else {
+            console.log('Oopps. I guessed it wrong.');
+        }
+        
+    </script>
+</body>
+</html>
