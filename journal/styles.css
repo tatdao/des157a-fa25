@@ -1,0 +1,70 @@
+body {
+    background-image: url(images/background.jpg);
+    padding: 80px 0;
+}
+
+h1, div, footer {
+    text-align: center;
+}
+
+h1{
+    font-size: 2.6em;
+}
+
+div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+div p {
+    font-size: 1em;
+    line-height: 0.5em;
+}
+
+main {
+    background-color: #72BF78;
+    width: 700px;
+    margin: auto;
+    border-radius: 16px;
+    padding: 40px;
+    color: #FEFF9F;
+}
+
+h1 {
+    font-family: "Corben", serif; 
+    font-weight: 700;
+}
+
+p, footer {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    letter-spacing: 0.2px;
+}
+
+main a {
+    font-style: italic;
+    text-decoration: none;
+}
+
+footer {
+    padding-top: 50px;
+}
+
+footer a {
+    background-color: #FEFF9F;
+    height: 90px;
+    padding: 10px;
+    text-decoration: none;
+    color:#72BF78;
+    border: 3px solid #72BF78;
+    border-radius: 16px;
+    transition: font-size 1s ease;
+}
+
+footer a:hover {
+    font-size: 1.2em;
+}
