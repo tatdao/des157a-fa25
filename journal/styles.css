@@ -23,7 +23,7 @@ div p {
     line-height: 0.5em;
 }
 
-main {
+article {
     background-color: #72BF78;
     width: 700px;
     margin: auto;
@@ -32,9 +32,16 @@ main {
     color: #FEFF9F;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 h1 {
     font-family: "Corben", serif; 
     font-weight: 700;
+    line-height: 1.4em;
 }
 
 p, footer {

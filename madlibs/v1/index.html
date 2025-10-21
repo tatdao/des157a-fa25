@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Rainy Day MadLib</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <main>
+        <h1>A Rainy Day MadLib</h1>
+
+        <p>Please input the following fields:</p>
+        
+        <form>
+        <label for="place">A noun for a place</label>
+        <input type="text" id="place">
+        <br>
+  
+        <label for="firstAdjective">An adjective</label>
+        <input type="text" id="firstAdjective">
+        <br>
+
+        <label for="color">Your favorite color</label>
+        <input type="text" id="color">
+        <br>
+
+        <label for="food">Your favorite food</label>
+        <input type="text" id="food">
+        <br>
+
+        <label for="noun">A noun (plural)</label>
+        <input type="text" id="noun">
+        <br>
+
+        <label for="secondAdjective">Another adjective</label>
+        <input type="text" id="secondAdjective">
+        <br>
+
+        <label for="number">Your favorite number</label>
+        <input type="text" id="number">
+        <br>
+
+        <label for="verbing">A verb ending in ing</label>
+        <input type="text" id="verbing">
+        <br>
+
+        <label for="personName">A person's name</label>
+        <input type="text" id="personName">
+        <br>
+        
+        <input type="submit" value="Create story">
+        </form>
+
+    </main>
+
+    <section id="overlay" class="hidden">
+        <article>
+            <h2>A Rainy Day</h2>
+            <p>
+                It started raining at noon when I just woke up on the <span>tree</span>.
+                The weather was <span>crispy</span>,
+                and the sky looked <span>orange</span>.
+                It made me nostalgic for the <span>pancakes</span> that my mom made when I live with her.
+            </p>
+
+            <p>
+                I ended up making myself a bowl of <span>pens</span>.
+                It was delicious and <span>disappearing</span> in my mouth.
+                I stayed home all day and worked on my assignments for tomorrow.
+                It took me <span>24</span> hours to finish it.
+            </p>
+            
+            <p>
+                The day seemed boring because I had nothing to do.
+                I wish the weather would stop <span>smoking</span> 
+                so I could hang out with <span>Bill</span>.
+            </p>
+            <button class="reset">Go back</button>
+        </article>
+    </section>
+</body>
+</html>
