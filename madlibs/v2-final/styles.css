@@ -2,7 +2,7 @@ body {
     background-image: url(images/mobile-background.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 80px;
+    padding-top: 65px;
     line-height: 1.4em;
     text-align: center;
 }
@@ -141,7 +141,7 @@ input[type="submit"]:hover {
 @media screen and (min-width: 600px){
     body {
         background-image: url(images/desktop-background.png);
-        padding-top: 30px;
+        padding-top: 10px;
     }
 
     main {
