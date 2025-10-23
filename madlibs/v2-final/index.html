@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Rainy Day MadLib</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <main>
+        <h1>A Rainy Day MadLib</h1>
+
+        <p>Please input the following fields:</p>
+        
+        <form id="myform">
+        <label for="place">A noun for a place</label>
+        <input type="text" id="place">
+        <br>
+  
+        <label for="firstAdjective">An adjective</label>
+        <input type="text" id="firstAdjective">
+        <br>
+
+        <label for="color">Your favorite color</label>
+        <input type="text" id="color">
+        <br>
+
+        <label for="food">Your favorite food</label>
+        <input type="text" id="food">
+        <br>
+
+        <label for="noun">A noun (plural)</label>
+        <input type="text" id="noun">
+        <br>
+
+        <label for="secondAdjective">Another adjective</label>
+        <input type="text" id="secondAdjective">
+        <br>
+
+        <label for="number">Your favorite number</label>
+        <input type="text" id="number">
+        <br>
+
+        <label for="verbing">A verb ending in ing</label>
+        <input type="text" id="verbing">
+        <br>
+
+        <label for="personName">A person's name</label>
+        <input type="text" id="personName">
+        
+        <p id="error"></p>
+        
+        <input type="submit" id="open" value="Create story">
+        </form>
+
+    </main>
+
+    <section id="overlay" class="hidden">
+        <article>
+            <h2>A Rainy Day</h2>
+
+            <p id="madlib"></p>
+
+            <button class="close">Go back</button>
+        </article>
+    </section>
+</body>
+</html>
