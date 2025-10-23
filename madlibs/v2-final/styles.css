@@ -38,11 +38,6 @@ form, p {
     color: #72BF78;
 }
 
-label {
-    padding-right: 5px;
-    line-height: 2.4em;
-}
-
 #overlay {
     position: absolute;
     background-color: rgba(0,0,0,0.5);
@@ -100,11 +95,23 @@ section p {
     text-align: justify;
 }
 
+div {
+    padding-bottom: 15px;
+}
+
+label {
+    padding-right: 5px;
+    position: absolute;
+    right: 50%;
+}
+
 input[type="text"] {
     padding: 3px;
     background-color: #D3EE98;
     border: 1px solid #72BF78;
     border-radius: 3px;
+    position: absolute;
+    left: 50%;
 }
 
 input[type="text"]:focus {
