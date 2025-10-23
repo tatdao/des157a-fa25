@@ -118,7 +118,7 @@ input[type="text"]:focus {
 input[type="submit"] {
     cursor: pointer;
     background-color:#f9f9fa;
-    margin-top: 5px;
+    margin-top: 20px;
     padding: 5px 10px;
     color: #72BF78;
     border: 1px solid #72BF78;
