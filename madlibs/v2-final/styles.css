@@ -38,12 +38,9 @@ form, p {
     color: #72BF78;
 }
 
-form {
-    line-height: 2.2em;
-}
-
 label {
     padding-right: 5px;
+    line-height: 2.4em;
 }
 
 #overlay {
