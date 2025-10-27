@@ -20,16 +20,17 @@ div {
 
 div p {
     font-size: 1em;
-    line-height: 0.5em;
+    line-height: 0.25em;
 }
 
 article {
-    background-color: #72BF78;
+    background-color: #FEFF9F;
+    border: 3px solid #72BF78;
     width: 700px;
     margin: auto;
     border-radius: 16px;
     padding: 40px;
-    color: #FEFF9F;
+    color: #72BF78;
 }
 
 main {
