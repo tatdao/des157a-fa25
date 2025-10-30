@@ -3,6 +3,21 @@ body {
     padding: 80px 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    font-style: oblique;
+    padding-top: 5px;
+    color: #5d735f; 
+}
+
 h1, div, footer {
     text-align: center;
 }
@@ -50,7 +65,6 @@ p, footer {
     font-weight: 400;
     font-size: 1.1em;
     line-height: 1.6em;
-    letter-spacing: 0.2px;
 }
 
 main a {
