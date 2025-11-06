@@ -1,0 +1,117 @@
+img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+body {
+    background-color:#191919;
+    max-width: 100%;
+}
+
+header {
+    text-align: center;
+    padding-top: 60px;
+    color: whitesmoke;
+}
+
+header p {
+    font-size: 1.4em;
+}
+
+h1, h2, p {
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6em;
+}
+
+h2 {
+    height: 1em;
+    font-size: 1em;
+    background-color: rgb(173, 255, 47, 0.75);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+h1 {
+    padding: 30px 0;
+}
+
+.emphasis {
+    box-sizing: border-box;
+    background-color: greenyellow;
+    height: 20px;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+.carousel {
+    width: 95%;
+    margin: auto;
+    overflow-x: auto;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.pictures {
+    display: flex;
+    gap: 1em;
+    animation: slide 12s infinite linear;
+}
+
+.pictures:hover {
+    animation-play-state: paused;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 55px 30px;
+    perspective: 100px;
+}
+
+article {
+    width: 375px;
+    height: 130px;
+    display: flex;
+    gap: 1em;
+}
+
+article p {
+    padding: 10px;
+}
+
+section:hover img{
+    transform: translateZ(20px);
+    border-top: 4px solid greenyellow;
+    border-right: 4px solid greenyellow;
+    border-left: 4px solid greenyellow;
+}
+
+section:hover article {
+    background-color: whitesmoke;
+    transform: translateZ(20px);
+    border-bottom: 4px solid greenyellow;
+    border-right: 4px solid greenyellow;
+    border-left: 4px solid greenyellow;
+}
+
+@keyframes slide {
+    from {translate: 0;}
+    to {translate: -100%;} 
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
