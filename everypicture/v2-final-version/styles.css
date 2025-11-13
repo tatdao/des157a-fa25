@@ -16,10 +16,10 @@ header {
 }
 
 header p {
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
-h1, h2, p {
+h2, p {
     font-family: "Gloria Hallelujah", cursive;
     font-weight: 400;
     font-style: normal;
@@ -33,17 +33,16 @@ h2 {
 }
 
 h1 {
-    padding: 30px 0;
+    font-family: "Zen Loop", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
 }
 
 .emphasis {
     box-sizing: border-box;
     background-color: greenyellow;
     height: 20px;
-}
-
-h1 {
-    font-size: 1.6em;
 }
 
 .carousel {
@@ -59,7 +58,7 @@ h1 {
 .pictures {
     display: flex;
     gap: 1em;
-    animation: slide 12s infinite linear;
+    animation: slide 10s infinite linear;
 }
 
 .pictures:hover {
@@ -69,7 +68,7 @@ h1 {
 section {
     display: flex;
     flex-direction: column;
-    padding: 55px 30px;
+    padding: 55px 20px;
     perspective: 100px;
 }
 
@@ -77,7 +76,6 @@ article {
     width: 375px;
     height: 130px;
     display: flex;
-    gap: 1em;
 }
 
 article p {
