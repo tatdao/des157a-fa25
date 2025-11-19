@@ -49,6 +49,7 @@ h1 {
     width: 95%;
     margin: auto;
     overflow-x: auto;
+    display: flex;
 }
 
 .carousel::-webkit-scrollbar {
@@ -59,9 +60,10 @@ h1 {
     display: flex;
     gap: 1em;
     animation: slide 10s infinite linear;
+    padding-right: 1em;
 }
 
-.pictures:hover {
+.carousel:hover .pictures{
     animation-play-state: paused;
 }
 
@@ -98,8 +100,8 @@ section:hover article {
 }
 
 @keyframes slide {
-    from {translate: 0;}
-    to {translate: -100%;} 
+    from {transform: translateX(0);}
+    to {transform: translateX(-100%);} 
 }
 
 .hidden {
