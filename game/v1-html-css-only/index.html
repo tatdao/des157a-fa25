@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On!</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Game of the Cats</h1>
+
+    <section id="gamecontrol">
+        <div class="quote">
+            <img src="images/profile.png" id="profile" alt="profile picture" width="100">
+            <div>
+                <img src="images/quote.png" alt="quote container" width="480">
+                <p>I'm gonna adopt one of you whoever first get<br>30 points or more!</p>
+            </div>
+        </div>
+        <button id="startgame">Start Game!</button>
+    </section>
+
+    <section id="score"></section>
+
+    <section id="game">
+        <div id="cats">
+            <img src="images/orange.png" id="orange" alt="orange cat" width="250">          
+            <img src="images/tuxedo.png" id="tuxedo" alt="tuxedo cat" width="300">
+        </div>
+    </section>
+
+    <section id="actions">
+        <button id="green"><img src="images/cat-mark.png" alt="cat foot mark" width="50">ROLL</button>
+        <button id="blue"><img src="images/cat-mark.png" alt="cat foot mark" width="50">PASS</button>
+    </section>
+    
+</body>
+</html>
