@@ -38,7 +38,7 @@ section {
     margin-top: 20px;
 }
 
-h1, h2, p, button {
+h1, h2, p, button, a {
     font-family: "Mouse Memoirs", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -57,13 +57,12 @@ h2 {
 }
 
 #gamecontrol button {
-    width: 115px;
-    height: 50px;
+    padding: 8px 15px;
     font-size: 1.6em;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
     border-radius: 6px;
     position: relative;
-    right: -350px;
+    right: -340px;
     top: -60px;
 }
 
@@ -72,7 +71,7 @@ h2 {
 }
 
 #cats {
-    width: 850px;
+    width: 870px;
     height: 220px;
     display: flex;
 }
@@ -105,7 +104,7 @@ h2 {
     padding: 10px;
 }
 
-#rollagain {
+#roll {
     background-color: #76FF4E;
 }
 
@@ -128,6 +127,15 @@ h2 {
     font-size: 1.4em;
 }
 
+em {
+    color:#D91317;
+}
+
+#game button {
+    visibility: hidden;
+    opacity: 0;
+}
+
 #game div{
     width: 180px;
     display: flex;
@@ -141,9 +149,40 @@ h2 {
     display: flex;
     gap: 460px;
     justify-content: center;
+    position: relative;
+    z-index: -1;
 }
 
-#score div {
+#score p {
+    color: white;
+    font-size: 1.4em;
     border-radius: 6px;
-    background-color: url(images/wood.jpg);
+    background: url(images/wood.jpg);
+    padding: 10px 15px;
+    position: relative;
+    top: -50px;
+}
+
+footer { 
+    position: absolute;
+    right: 48%;
+    bottom: 20px;
+    font-size: 1.4em;
+}
+
+footer a {
+    color: black;
+}
+
+.winner {
+    animation: bigger 3s infinite linear;
+}
+
+.congrats {
+    color: #D91317;
+}
+
+@keyframes bigger {
+    0% {transform: scale(1);}
+    100% {transform: scale(1.6);}
 }
