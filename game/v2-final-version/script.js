@@ -61,6 +61,7 @@
         gameData.rollSum = gameData.roll1 + gameData.roll2;
 
         //handle if statements
+        //when the player rolled snake eyes
         if(gameData.rollSum === 2){
             // console.log('snake eyes');
             game.innerHTML += '<p style="color: #D91317; background-color: white; border: 3px solid #D91317; border-radius: 6px; padding: 5px 25px;">Oh snap! Snake eyes! Switch turn!</p>';
@@ -69,13 +70,15 @@
             setTimeout(setUpTurn, 2500);
             showCurrentScore();
         } 
+        //when the player one 'one' dice
         else if(gameData.roll1 === 1 || gameData.roll2 === 1){
             // console.log('one of the two dice rolled a 1');
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             game.innerHTML += `<p style="color: #D91317; background-color: white; border: 3px solid #D91317; border-radius: 6px; padding: 5px 25px;">One of your rolls was one.<br>Switching to player ${gameData.players[gameData.index]}</p>`;
             meowSound.play();
             setTimeout(setUpTurn, 2500);
-        } 
+        }
+        //when the player rolled neither 'one' dice
         else {
             // console.log('neither die was a 1, game continues...');
             gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
@@ -95,7 +98,9 @@
         }
     }
 
+    //check the score
     function checkWinningCondition(){
+        //check if one of the players' score is greater than 29
         if(gameData.score[gameData.index] > gameData.gameEnd){
             score.innerHTML = '';
             game.innerHTML = '';
@@ -114,6 +119,7 @@
         }
     }
 
+    //show the current score
     function showCurrentScore(){
         score.innerHTML = `<p id="orange-score">${gameData.players[0]}<br>${gameData.score[0]}</p>`;
         score.innerHTML += `<p id="tuxedo-score">${gameData.players[1]}<br>${gameData.score[1]}</p>`;
